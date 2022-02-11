@@ -1,8 +1,8 @@
-﻿using IOC.Editor.Tests.Examples;
-using IOC.Interface;
+﻿using Framework.IOC.Editor.Tests.Examples;
+using Framework.IOC.Interface;
 using NUnit.Framework;
 
-namespace IOC.Editor.Tests
+namespace Framework.IOC.Editor.Tests
 {
     public class IOCContainerRegisterInjectTests
     {

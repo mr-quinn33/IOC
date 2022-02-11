@@ -1,4 +1,4 @@
-﻿namespace IOC.Editor.Tests.Examples
+﻿namespace Framework.IOC.Editor.Tests.Examples
 {
     public class MyTestDependency { }
 }

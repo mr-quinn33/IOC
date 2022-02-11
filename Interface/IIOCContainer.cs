@@ -1,4 +1,4 @@
-﻿namespace IOC.Interface
+﻿namespace Framework.IOC.Interface
 {
     public interface IIOCContainer
     {
