@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Framework.IOC.Attribute;
-using Framework.IOC.Interface;
+using IOC.Attribute;
+using IOC.Interface;
 
-namespace Framework.IOC
+namespace IOC
 {
     public class IOCContainer : IIOCContainer
     {

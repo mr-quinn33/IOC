@@ -1,6 +1,6 @@
-﻿using Framework.IOC.Attribute;
+﻿using IOC.Attribute;
 
-namespace Framework.IOC.Editor.Tests.Examples
+namespace IOC.Editor.Tests.Examples
 {
     public class MyTestClass
     {

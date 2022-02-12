@@ -1,4 +1,4 @@
-﻿namespace Framework.IOC.Attribute
+﻿namespace IOC.Attribute
 {
     public class InjectAttribute : System.Attribute
     {
