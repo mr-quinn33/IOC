@@ -1,7 +1,7 @@
-﻿using IOC.Interface;
+﻿using Framework.IOC.Interfaces;
 using NUnit.Framework;
 
-namespace IOC.Editor.Tests
+namespace Framework.IOC.Editor.Tests
 {
     public class IOCContainerRegisterClearResolveTests
     {
@@ -15,7 +15,7 @@ namespace IOC.Editor.Tests
 
             Assert.IsNull(obj);
         }
-        
+
         [Test]
         public void RegisterClearResolve_RegisterInstance_Null()
         {
@@ -26,7 +26,7 @@ namespace IOC.Editor.Tests
 
             Assert.IsNull(obj);
         }
-        
+
         [Test]
         public void RegisterClearResolve_RegisterDependency_Null()
         {
@@ -37,7 +37,7 @@ namespace IOC.Editor.Tests
 
             Assert.IsNull(obj);
         }
-        
+
         [Test]
         public void RegisterClearResolve_RegisterInstanceDependency_Null()
         {
@@ -45,7 +45,7 @@ namespace IOC.Editor.Tests
             iocContainer.Register<IIOCContainer>(iocContainer);
             iocContainer.Clear();
             var obj = iocContainer.Resolve<IIOCContainer>();
-            
+
             Assert.IsNull(obj);
         }
     }

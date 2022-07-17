@@ -1,8 +1,8 @@
-﻿using IOC.Editor.Tests.Examples;
-using IOC.Interface;
+﻿using Framework.IOC.Editor.Tests.Examples;
+using Framework.IOC.Interfaces;
 using NUnit.Framework;
 
-namespace IOC.Editor.Tests
+namespace Framework.IOC.Editor.Tests
 {
     public class IOCContainerRegisterInjectTests
     {
@@ -13,11 +13,11 @@ namespace IOC.Editor.Tests
             var testInstance = new MyTestClass();
             iocContainer.Register<MyTestDependency>();
             iocContainer.Inject<MyTestDependency>(testInstance);
-            
+
             Assert.IsNotNull(testInstance.Dependency);
             Assert.AreEqual(typeof(MyTestDependency), testInstance.Dependency.GetType());
         }
-        
+
         [Test]
         public void RegisterInject_RegisterInstance_NotNullAndEqual()
         {
@@ -25,7 +25,7 @@ namespace IOC.Editor.Tests
             var testInstance = new MyTestClass();
             iocContainer.Register<MyTestDependency>(new MyTestDependency());
             iocContainer.Inject<MyTestDependency>(testInstance);
-            
+
             Assert.IsNotNull(testInstance.Dependency);
             Assert.AreEqual(typeof(MyTestDependency), testInstance.Dependency.GetType());
         }

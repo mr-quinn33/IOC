@@ -1,7 +1,7 @@
-using IOC.Interface;
+using Framework.IOC.Interfaces;
 using NUnit.Framework;
 
-namespace IOC.Editor.Tests
+namespace Framework.IOC.Editor.Tests
 {
     public class IOCContainerRegisterResolveTests
     {
@@ -11,11 +11,11 @@ namespace IOC.Editor.Tests
             var iocContainer = new IOCContainer() as IIOCContainer;
             iocContainer.Register<IOCContainer>();
             var obj = iocContainer.Resolve<IOCContainer>();
-            
+
             Assert.IsNotNull(obj);
             Assert.AreNotEqual(iocContainer, obj);
         }
-        
+
         [Test]
         public void RegisterResolve_RegisterInstance_Equal()
         {
@@ -26,7 +26,7 @@ namespace IOC.Editor.Tests
 
             Assert.AreEqual(instance1, instance2);
         }
-        
+
         [Test]
         public void RegisterResolve_RegisterDependency_Equal()
         {

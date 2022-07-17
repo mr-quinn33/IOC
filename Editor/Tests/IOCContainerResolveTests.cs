@@ -1,7 +1,7 @@
-﻿using IOC.Interface;
+﻿using Framework.IOC.Interfaces;
 using NUnit.Framework;
 
-namespace IOC.Editor.Tests
+namespace Framework.IOC.Editor.Tests
 {
     public class IOCContainerResolveTests
     {
